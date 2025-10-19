@@ -1855,7 +1855,185 @@ footer .sub-foo section div a:hover {
 }
 .page--contact .section--hero {
   width: 100%;
+  height: 450px;
+  background-color: aqua;
+  background-image: url("../../../images/contact-img.png");
+  background-size: cover;
+  background-position: center;
+}
+.page--contact .section--form {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+.page--contact .section--form__details {
+  width: 50%;
+  height: 100%;
+  padding-top: 7.2rem;
+  padding-left: 1rem;
+}
+.page--contact .section--form__details h1 {
+  font-size: 50px !important;
+  font-weight: 500 !important;
+  margin-bottom: 5px;
+}
+.page--contact .section--form__details .ssf-d-label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+.page--contact .section--form__details h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: #212830;
+  line-height: 110%;
+  max-width: 220px;
+  text-transform: none;
+  margin-top: 2rem;
+}
+.page--contact .section--form__details .ssf-fd-box {
+  margin-top: 3rem;
+}
+.page--contact .section--form__details .ssf-fd-box .ssf-fd-box-pt {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 0px !important;
+  font-family: "Inter", sans-serif;
+}
+.page--contact .section--form__details .ssf-fd-box .ssf-fd-box-txt {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 260px;
+}
+.page--contact .section--form__form {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #B3B3B3;
+  border-right: 1px solid #B3B3B3;
+}
+.page--contact .section--form__form .sff-bvec {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.page--contact .section--form__form .sff-top {
+  width: 100%;
+  padding-block: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 40px;
+}
+.page--contact .section--form__form .sff-top p {
+  max-width: 360px;
+  font-size: 14px;
+  color: #212830;
+}
+.page--contact .section--form__form .sff-main-form {
+  width: 100%;
+  border-top: 1px solid #B3B3B3;
+  background: linear-gradient(0deg, #13171C, #353F4B);
+  padding: 2.8rem 2.5rem;
+}
+.page--contact .section--form__form .sff-main-form h3 {
+  color: #fff;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  line-height: 110%;
+  font-size: 25px;
+}
+.page--contact .section--form__form .sff-main-form .sffmf-form-group {
+  display: flex;
+  gap: 26px;
+  margin-top: 2.3rem;
+}
+.page--contact .section--form__form .sff-main-form .sffmf-form-group input {
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding-block: 0.9rem;
+}
+.page--contact .section--form__form .sff-main-form .sffmf-form-group input::placeholder {
+  color: #fff;
+}
+.page--contact .section--form__form .sff-main-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  resize: none;
+  margin-top: 3rem;
+}
+.page--contact .section--form__form .sff-main-form textarea::placeholder {
+  color: #fff;
+}
+.page--contact .section--form__form .sff-main-form button {
+  width: 100%;
+  height: 50px;
+  background-color: #0B95D0;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-top: 2rem;
+}
+@media (max-width: 892px) {
+  .page--contact .section--form {
+    flex-direction: column;
+  }
+  .page--contact .section--form__form, .page--contact .section--form__details {
+    width: 100%;
+  }
+  .page--contact .section--form__details {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+  .page--contact .section--form__details h1, .page--contact .section--form__details h2 {
+    text-align: center;
+  }
+  .page--contact .section--form__details .ssf-fd-box {
+    margin-top: 1rem;
+  }
+  .page--contact .section--form__details .ssf-fd-box .ssf-fd-box-pt {
+    text-align: center;
+  }
+  .page--contact .section--form__details .ssf-fd-box .ssf-fd-box-txt {
+    text-align: center;
+  }
+  .page--contact .section--form__form {
+    border-top: 1px solid #B3B3B3;
+  }
+}
+.page--contact .section--map {
+  width: 100%;
   height: 30rem;
+  background-image: url("../../../images/map.png");
+  background-position: center;
+  background-size: cover;
+}
+.page--contact .section--map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
