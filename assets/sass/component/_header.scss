@@ -1,0 +1,143 @@
+@use "./color" as *;
+@use "./typography" as *;
+
+header{
+    width: 100%;
+    height: 4.5rem;
+    padding-inline: 1rem;
+    box-shadow: 0 3px 6px -3px rgba(188, 191, 193, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+
+    .main-header{
+        max-width: 1350px;
+        height: 100%;
+        margin: 0 auto;
+       // background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+        
+        .mh-logo{
+            //background-color: red;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+
+            img{
+                height: 3rem;
+                cursor: pointer;
+            }
+        }
+        .mh-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3.3rem;
+
+            li{
+                list-style: none;
+
+                a{
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-family: $font-secondary;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .mh-cta{
+            //background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            
+            .cta-btn-head{
+                padding: 8px 1.3rem;
+                background-color: #fff;
+                border: 1px solid #000;
+                border-radius: 5px;
+                font-size: 15px;
+                font-family: $font-secondary;
+                color: #000;
+                text-decoration: none !important;
+            }
+        }
+        @media (max-width: 692px) {
+            display: none;
+        }
+    }
+
+    .mobile-header{
+        max-width: 1350px;
+        height: 100%;
+        display: none;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+
+        .mh-logo{
+            //background-color: red;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 3rem;
+                cursor: pointer;
+            }
+        }
+        #menu-btn{
+            background-color: transparent;
+            outline: none;
+            user-select: none;
+        }
+
+        @media (max-width: 692px) {
+            display: flex;
+        }
+    }
+    .menu-mob-links{
+        width: 100%;
+        height: 18rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        transform: translateY(-17.8rem);
+        box-shadow: 0 3px 6px -3px rgba(188, 191, 193, 0.4);
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+
+        @media (max-width: 692px) {
+            display: flex;
+        }
+
+        a{
+            color: #000;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: $font-secondary;
+            &:hover{
+                text-decoration: none;
+                color: #007bff;
+            }
+        }
+    }
+    .menu-mob-links.active {
+        transform: translateY(3.8rem); /* shown when active */
+    }
+}

@@ -1,0 +1,273 @@
+@use "color" as *;
+
+footer {
+   width: 100%;
+   // height: 22rem;
+   padding-top: 4rem;
+   background-color: #fff;
+   .main--foo{
+      max-width: 1350px;
+      height: 20rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 50% 1fr 20%;
+      row-gap: 1rem;
+      gap: 1rem;
+      padding-inline: 1rem;
+
+      .bx-mf-1{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         // justify-content: space-between;
+   
+
+         .main--logo{
+            display: flex;
+            gap: 10px;
+
+            img{
+               height: 3.3rem;
+               user-select: none;
+            }
+            .main--logo-txt{
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               p{
+                  margin: 0;
+                  user-select: none;
+               }
+               .main--logo-txt-jag{
+                  font-size: 20px;
+                  font-weight: 500;
+                  font-family: 'Inter', sans-serif;
+                  margin-bottom: -.2rem;
+               }
+               .main--logo-txt-dbs{
+                  font-size: 10px !important;
+                  font-weight: 600;
+                  font-family: 'Inter', sans-serif;
+                  margin-bottom: -.5rem;
+                  text-transform: uppercase;
+                  text-align: left;
+                  max-width: 139px;
+                  line-height: 120%;
+               }
+            }
+         }
+
+         .logo-p-svgs{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding-top: 4rem;
+
+            .short-des-foo{
+               max-width: 480px;
+               text-align: start;
+            }
+            .foo-svgs-b1{
+               display: flex;
+               gap: 10px;
+            }
+         }
+      }
+
+      .bx-mf-2{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         
+         h3{
+            font-size: 23px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 1.5rem;
+         }
+         
+         .bx2-link{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+
+            a{
+               font-family: 'Raleway', sans-serif;
+               font-size: 15px;
+               font-weight: 500;
+               color: #000;
+
+               &:hover{
+                  color: #007bff;
+                  text-decoration: none;
+               }
+            }
+         }
+      }
+
+      .bx-mf-3{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         
+         h3{
+            font-size: 23px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 1.5rem;
+         }
+         
+         .bx2-link{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+
+            a{
+               font-family: 'Raleway', sans-serif;
+               font-size: 15px;
+               font-weight: 500;
+               color: #000;
+
+               &:hover{
+                  color: #007bff;
+                  text-decoration: none;
+               }
+            }
+         }
+      }
+      @media (max-width: 992px) {
+         grid-template-columns: 100%;
+         height: auto !important;
+         align-content: center;
+         justify-content: center;
+         padding-bottom: 4.3rem;
+         row-gap: 2rem;
+
+         .bx-mf-1{
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+
+            .main--logo{
+               display: flex;
+               gap: 10px;
+
+               img{
+                  height: 3.3rem;
+                  user-select: none;
+               }
+               .main--logo-txt{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  p{
+                     margin: 0;
+                     user-select: none;
+                  }
+                  .main--logo-txt-jag{
+                     font-size: 20px;
+                     font-weight: 500;
+                     font-family: 'Inter', sans-serif;
+                     margin-bottom: -.2rem;
+                  }
+                  .main--logo-txt-dbs{
+                     font-size: 10px !important;
+                     font-weight: 600;
+                     font-family: 'Inter', sans-serif;
+                     margin-bottom: -.5rem;
+                     text-transform: uppercase;
+                     text-align: left;
+                     max-width: 139px;
+                     line-height: 120%;
+                  }
+               }
+            }
+
+            .logo-p-svgs{
+               padding-top: 1rem;
+               align-items: center;
+               .short-des-foo{
+                  max-width: 480px;
+                  text-align: center;
+               }
+            }
+         }
+         .bx-mf-2, .bx-mf-3{
+            align-items: center;
+            
+            .bx2-link{
+               align-items: center;
+
+               a{
+                  text-align: center;
+               }
+            }
+         }
+         .bx-mf-2 {
+            grid-row: 3;
+         }
+
+         .bx-mf-3 {
+            grid-row: 2;
+         }
+
+      }
+   }
+   .sub-foo{
+      width: 100%;
+      height: 3.6rem;
+      //background-color: #007bff;
+      border-top: 1px solid #0000004b;
+   
+      section{
+         max-width: 1350px;
+         height: 100%;
+         //background-color: #000;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-inline: 1rem;
+
+         p{
+            margin: 0;
+            font-size: 14px;
+         }
+         div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            a{
+               font-family: 'Raleway', sans-serif;
+               font-size: 14px;
+               font-weight: 500;
+               color: #000;
+
+               &:hover{
+                  color: #007bff;
+                  text-decoration: none;
+               }
+            }
+            @media (max-width: 621px) {
+               flex-wrap: wrap;
+               
+            }
+         }
+         @media (max-width: 621px) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 12px;
+         }
+      }
+      @media (max-width: 621px) {
+         height: auto !important;
+         padding-block: 15px;
+      }
+   }
+}

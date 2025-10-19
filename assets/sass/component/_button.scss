@@ -1,0 +1,53 @@
+@use "typography" as *;
+@use "color" as *;
+
+.btn {
+    min-width: 150px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    letter-spacing: 3%;
+    outline: none !important;
+    transition: transform 0s ease;
+    font-size: 14px;
+
+    &--primary {
+        border: 1px solid #212830;
+        background-color: #212830;
+        color: #fff;
+        box-shadow: -7px 8px 1px -3px #0B95D0;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:focus,
+        &:active {
+            transform: translate(-8px, 9px);
+            box-shadow: none !important;
+            outline: none;
+        }
+    }
+
+    &--secondary {
+        color: #212830;
+        border: 2px solid #0B95D0;
+        background-color: #fff !important;
+        box-shadow: -7px 8px 1px -3px #0B95D0;
+
+        &:hover {
+            color: #212830;
+        }
+
+        &:focus,
+        &:active {
+            transform: translate(-8px, 9px);
+            box-shadow: none !important;
+            outline: none;
+        }
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
