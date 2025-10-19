@@ -1155,12 +1155,6 @@ footer .sub-foo section div a:hover {
     font-size: 26px;
   }
 }
-.page--home .section--services .ss-mcon .hm-serv-con .serv-hmbx-b1 {
-  background-image: url("../../../images/derv.png");
-}
-.page--home .section--services .ss-mcon .hm-serv-con .serv-hmbx-b2 {
-  background-image: url("../../../images/derv.png");
-}
 @media (max-width: 1130px) {
   .page--home .section--services .ss-mcon .hm-serv-con {
     padding-inline: 20px;
@@ -1540,14 +1534,20 @@ footer .sub-foo section div a:hover {
   }
 }
 .page--about .section--about-us {
+  width: 100%;
+  padding-block: 1rem;
+  overflow: hidden;
+}
+.page--about .section--about-us .sec-abts-main {
   max-width: 1350px;
   height: 550px;
   margin: 4rem auto;
   display: flex;
   padding-inline: 1rem;
   gap: 1rem;
+  position: relative;
 }
-.page--about .section--about-us .sabts-details {
+.page--about .section--about-us .sec-abts-main .sabts-details {
   width: 55%;
   height: 100%;
   display: flex;
@@ -1556,36 +1556,36 @@ footer .sub-foo section div a:hover {
   align-items: flex-start;
   justify-content: center;
 }
-.page--about .section--about-us .sabts-details h2 {
+.page--about .section--about-us .sec-abts-main .sabts-details h2 {
   max-width: 550px;
   margin-bottom: 0.9rem;
 }
 @media (max-width: 992px) {
-  .page--about .section--about-us .sabts-details h2 {
+  .page--about .section--about-us .sec-abts-main .sabts-details h2 {
     max-width: 800px;
   }
 }
-.page--about .section--about-us .sabts-details .sabts-details-label {
+.page--about .section--about-us .sec-abts-main .sabts-details .sabts-details-label {
   max-width: 662px;
   margin-bottom: 1.2rem;
 }
 @media (max-width: 992px) {
-  .page--about .section--about-us .sabts-details .sabts-details-label {
+  .page--about .section--about-us .sec-abts-main .sabts-details .sabts-details-label {
     max-width: 800px;
   }
 }
-.page--about .section--about-us .sabts-details li svg {
+.page--about .section--about-us .sec-abts-main .sabts-details li svg {
   margin-top: 5px;
 }
-.page--about .section--about-us .sabts-details li p {
+.page--about .section--about-us .sec-abts-main .sabts-details li p {
   max-width: 550px;
 }
 @media (max-width: 992px) {
-  .page--about .section--about-us .sabts-details li p {
+  .page--about .section--about-us .sec-abts-main .sabts-details li p {
     max-width: 800px !important;
   }
 }
-.page--about .section--about-us .sabts-image {
+.page--about .section--about-us .sec-abts-main .sabts-image {
   width: 50%;
   height: 100%;
   display: flex;
@@ -1593,20 +1593,27 @@ footer .sub-foo section div a:hover {
   align-items: center;
 }
 @media (max-width: 992px) {
-  .page--about .section--about-us {
+  .page--about .section--about-us .sec-abts-main {
     flex-direction: column;
     height: auto;
     row-gap: 3rem;
   }
-  .page--about .section--about-us .sabts-details {
+  .page--about .section--about-us .sec-abts-main .sabts-details {
     width: 100%;
   }
-  .page--about .section--about-us .sabts-image {
+  .page--about .section--about-us .sec-abts-main .sabts-image {
     width: 100%;
   }
 }
+.page--about .section--about-us .sec-abts-main .abts-vec {
+  position: absolute;
+  right: -5rem;
+  bottom: -8rem;
+  z-index: -1;
+}
 .page--about .section--misval {
   padding-block: 4rem;
+  padding-top: 7rem;
   padding-inline: 1rem;
   overflow: hidden;
   position: relative;
@@ -1653,6 +1660,13 @@ footer .sub-foo section div a:hover {
   text-align: center;
   color: #212830;
   font-size: 14px;
+}
+@media (max-width: 992px) {
+  .page--about .section--misval .main--weoffer .we-offer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .page--about .section--misval .misval-vec {
   position: absolute;

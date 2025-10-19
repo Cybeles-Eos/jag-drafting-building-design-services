@@ -192,70 +192,86 @@
          }
       }
       &--about-us{
-         max-width: 1350px;
-         height: 550px;
-         margin: 4rem auto;
-         display: flex;
-         padding-inline: 1rem;
-         gap: 1rem;
+         width: 100%;
+         padding-block: 1rem;
+         overflow: hidden;
+         
 
-         .sabts-details{
-            width: 55%;
-            height: 100%;
+         .sec-abts-main{
+            max-width: 1350px;
+            height: 550px;
+            margin: 4rem auto;
             display: flex;
-            flex-direction: column;
-            gap: 7px;
-            align-items: flex-start;
-            justify-content: center;
+            padding-inline: 1rem;
+            gap: 1rem;
+            position: relative;
 
-            h2{
-               max-width: 550px;
-               margin-bottom: .9rem;
-               @media (max-width: 992px) {
-                  max-width: 800px;
-               }
-            }
-            .sabts-details-label{
-               max-width: 662px;
-               margin-bottom: 1.2rem;
-               @media (max-width: 992px) {
-                  max-width: 800px;
-               }
-            }
-            li{
-               svg{
-                  margin-top: 5px;
-               }
-               p{
+            .sabts-details{
+               width: 55%;
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               gap: 7px;
+               align-items: flex-start;
+               justify-content: center;
+
+               h2{
                   max-width: 550px;
+                  margin-bottom: .9rem;
                   @media (max-width: 992px) {
-                     max-width: 800px !important;
+                     max-width: 800px;
+                  }
+               }
+               .sabts-details-label{
+                  max-width: 662px;
+                  margin-bottom: 1.2rem;
+                  @media (max-width: 992px) {
+                     max-width: 800px;
+                  }
+               }
+               li{
+                  svg{
+                     margin-top: 5px;
+                  }
+                  p{
+                     max-width: 550px;
+                     @media (max-width: 992px) {
+                        max-width: 800px !important;
+                     }
                   }
                }
             }
-         }
-         .sabts-image{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-         @media (max-width: 992px) {
-            flex-direction: column;
-            height: auto;
-            row-gap: 3rem;
-
-            .sabts-details{
-               width: 100%;
-            }
             .sabts-image{
-               width: 100%;
+               width: 50%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+            @media (max-width: 992px) {
+               flex-direction: column;
+               height: auto;
+               row-gap: 3rem;
+
+               .sabts-details{
+                  width: 100%;
+               }
+               .sabts-image{
+                  width: 100%;
+               }
+            }
+            .abts-vec{
+               position: absolute;
+               right: -5rem;
+               bottom: -8rem;
+               z-index: -1;
             }
          }
+
       }
       &--misval{
          padding-block: 4rem;
+         padding-top: 7rem;
          padding-inline: 1rem;
          overflow: hidden;
          position: relative;
@@ -266,6 +282,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             .hm-ser-headline{
                max-width: 490px;
                text-align: center;
@@ -302,7 +319,13 @@
                      font-size: 14px;
                   }
                }
+               @media (max-width: 992px) {
+                  flex-wrap: wrap;
+                  align-items: center;
+                  justify-content: center;
+               }
             }
+
          }
 
          .misval-vec{
@@ -400,7 +423,6 @@
             flex-direction: column;
          }
       }  
-
       &--cta{
          width: 100%;
          height: 387px;
